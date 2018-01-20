@@ -24,7 +24,7 @@ img_transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ])
-inputs_control = Image.open('./image/kitten.jpg')
+inputs_control = Image.open('./image/3.jpg')
 inputs_control = img_transform(inputs_control).unsqueeze(0)
 inputs_control_np = inputs_control.numpy()
 
